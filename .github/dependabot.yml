@@ -1,0 +1,40 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+# 99-helper-scripts/ping-bulkconfigtool/
+# 11-docker-compose/00-standalone/pingaccess/
+# 11-docker-compose/00-standalone/pingcentral/
+# 11-docker-compose/00-standalone/pingdirectory/
+# 11-docker-compose/00-standalone/pingfederate/
+version: 2
+updates:
+  #- package-ecosystem: "docker" # See documentation for possible values
+  #  directory: "/" # Location of package manifests
+  #  schedule:
+  #    interval: "weekly"
+
+  - package-ecosystem: "docker" # See documentation for possible values
+  directory: "/99-helper-scripts/ping-bulkconfigtool/" # Location of package manifests
+  schedule:
+    interval: "weekly"
+
+  - package-ecosystem: "docker" # See documentation for possible values
+  directory: "11-docker-compose/00-standalone/pingaccess/" # Location of package manifests
+  schedule:
+    interval: "weekly"
+
+  - package-ecosystem: "docker" # See documentation for possible values
+  directory: "11-docker-compose/00-standalone/pingcentral/" # Location of package manifests
+  schedule:
+    interval: "weekly"
+    
+  - package-ecosystem: "docker" # See documentation for possible values
+  directory: "11-docker-compose/00-standalone/pingdirectory/" # Location of package manifests
+  schedule:
+    interval: "weekly"
+
+  - package-ecosystem: "docker" # See documentation for possible values
+  directory: "11-docker-compose/00-standalone/pingfederate/" # Location of package manifests
+  schedule:
+    interval: "weekly"
